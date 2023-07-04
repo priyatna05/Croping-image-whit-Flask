@@ -15,10 +15,10 @@ pip install pillow
 python app.py
 ```
 
-## Demo
+Demo
 
 <video width="320" height="240" controls>
-  <source src="https://github.com/priyatna05/Croping-image-whit-Flask/blob/master/assets/gif-demo.mp4" type="video/mp4">
+  <source src="Croping-image-whit-Flask/assets/gif-demo.mp4" type="video/mp4">
 </video>
 ## Authors
 
