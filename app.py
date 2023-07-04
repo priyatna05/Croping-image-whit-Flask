@@ -64,12 +64,16 @@ def crop():
 
     cropped_image = crop_image(image_path, size, position)
     if cropped_image:
+        # Convert the image to RGB mode
+        cropped_image = cropped_image.convert('RGB')
+
         cropped_filename = 'cropped.jpg'
         cropped_path = os.path.join(app.config['UPLOAD_FOLDER'], cropped_filename)
         cropped_image.save(cropped_path)
         return render_template('index.html', cropped=True, filename=cropped_filename)
     else:
         return render_template('index.html', error='Invalid crop position.')
+
 
 if __name__ == '__main__':
     app.run()
